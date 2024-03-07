@@ -3,10 +3,13 @@ library(plotly)
 library(dplyr)
 
 # Source file with dataframe
-source("education.csv")
-source("unemployment.csv")
+source("data/education.csv")
+source("data/unemployment.csv")
 
-# Server
+# Source with analysis
+source("analysis/education_impact_analysis.R")
+source("analysis/education_income_area_impact_analysis.R")
+source("analysis/education_rural_urban.R")
 # Server function
 server <- function(input, output) {
   
