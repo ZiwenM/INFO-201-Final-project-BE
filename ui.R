@@ -139,4 +139,5 @@ viz_3_tab <- tabPanel("Income Analysis",
 
 conclusion_tab <- tabPanel("Conclusions",
                            h1("Key Findings and Implications"),
+                           p("")
                          
