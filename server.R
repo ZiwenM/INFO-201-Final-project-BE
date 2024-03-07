@@ -51,7 +51,9 @@ server <- function(input, output) {
     return("In rural areas, the distribution of education levels appears to be weighted towards high school completion, with a significant percentage of adults holding only a high school diploma, as indicated by the prominent light purple bar. This suggests that in these areas, completing high school is a common educational milestone.\n\nMoreover, there is also a substantial representation of adults with less than a high school diploma, marked by the red bar, which may point to barriers to educational access or attainment in rural regions.\n\nConversely, higher education levels such as a bachelor's degree or higher and four years of college or higher, denoted by the blue and pink bars, respectively, have a smaller percentage. This could reflect limited opportunities for higher education in rural areas or perhaps less demand for such qualifications in the rural workforce.")
   })
 }
-  
+  shinyApp(ui=ui, server=server)
+
+server <- function(input, output) {
   # Simulated data frame for illustration
   education_impact_df <- reactive({
     data.frame(
@@ -93,9 +95,9 @@ server <- function(input, output) {
     to outperform rural areas in both median wages and employment rates."
   })
 }
+shinyApp(ui=ui, server=server)
 
-
-
+server <- function(input, output) {
   # Simulated data frame for illustration
   education_impact_df <- reactive({
     data.frame(
@@ -132,3 +134,4 @@ output$analysisText <- renderText({
     return("The analysis of education's impact on median household income over the last two decades reveals considerable variability. Notably, education seems to have a more pronounced impact on income in urban areas, which may be attributed to the concentration of jobs requiring higher educational qualifications. In contrast, rural areas show greater fluctuations, with recent trends indicating a potential downturn in income benefits from education. These findings underscore the complex relationship between educational attainment and economic prosperity, which is influenced by a myriad of factors beyond education itself.")
 })
 }
+shinyApp(ui=ui, server=server)
