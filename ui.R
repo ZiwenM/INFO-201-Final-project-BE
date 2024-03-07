@@ -6,7 +6,7 @@ source("unemployment.csv")
 ## OVERVIEW TAB INFO 
 ui <- fluidPage(
   theme = shinytheme("flatly"),
-  titlePanel("Employment Rates by Educational Attainment From 2015 To 2019"),w
+  titlePanel("Employment Rates by Educational Attainment From 2015 To 2019"),
   tabsetPanel(
     tabPanel("Project Overview", fluid = TRUE, sidebarLayout(
       sidebarPanel(
