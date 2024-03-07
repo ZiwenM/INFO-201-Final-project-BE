@@ -80,5 +80,6 @@ server <- function(input, output) {
         theme_minimal()
     }
   })
+  }
   
 
