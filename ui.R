@@ -51,7 +51,7 @@ ui <- fluidPage(
         p("The second dataset used throughout this project is called Income from kaggle.com. This document presents the mean income of 
           individuals from each county across all states in the US."), 
         h1("ABOUT US | Authors and Affiliation"),
-             p(strong("Authors:"),"Joel Elangovan, Ziwen Meng, Lily Ngo, Connor Yan"),
+             p(strong("Authors:"),"Connor Yan, Ziwen Meng"),
              p(strong("Affiliation:"),"INFO 201: Foundational Skills for Data Science"),
              p("The Information School, The University of Washington"),
              p("Winter 2024")
